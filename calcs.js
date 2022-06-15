@@ -16,10 +16,10 @@ function checkanswer() {
 
     if (result === myanswer) {
 
-        num1.innerText = "ola, a comparação deu certo";
+        num1.innerText = ("ola, a comparação deu certo");
 
     }
 
-    return num1
+
 
 }
