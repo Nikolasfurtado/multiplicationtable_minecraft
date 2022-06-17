@@ -13,6 +13,8 @@ function sortnumbers() {
 
 function checkanswer() {
 
+
+    Window.myanswer
     result = num1 * num2;
 
     num1.innerText = myanswer;
