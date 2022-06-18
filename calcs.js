@@ -1,23 +1,28 @@
-var num1 = document.getElementById("n1");
-var num2 = document.getElementById("n2");
-const res = document.getElementById("res");
+var res = document.getElementById("res");
 var myanswer = document.getElementById("answer");
-let video = document.getElementById("video");
+var video = document.getElementById("video");
+var correct = 0;
 
+
+var num1 = document.getElementById("n1").innerText = Math.floor(Math.random() * 10 + 1);
+var num2 = document.getElementById("n2").innerText = Math.floor(Math.random() * 10 + 1);
 
 function sortnumbers() {
-    num1.innerText = Math.floor(Math.random() * 10 + 1);
-    num2.innerText = Math.floor(Math.random() * 10 + 1);
-}
+    num1 = document.getElementById("n1").innerText = Math.floor(Math.random() * 10 + 1);
+    num2 = document.getElementById("n2").innerText = Math.floor(Math.random() * 10 + 1);
 
+}
+var resp1 = num1.innerText;
+var resp2 = num2.innerText;
 
 function checkanswer() {
 
-    num1 = num1.innerText;
-    num2 = num2.innerText;
-    var result = num1 * num2;
-    res.innerText = myanswer;
+    var result = resp1 * resp2;
 
+    if (myanswer.value == result) {
+        video.play();
+    }
 
+    sortnumbers();
 
 }
