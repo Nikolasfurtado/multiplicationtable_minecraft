@@ -39,7 +39,7 @@ function checkanswer() {
 
 
     } else {
-        resposta.innerText = "Resposta Incorreta!"
+        resposta.innerText = "Resposta Incorreta! Tente de novo."
         setTimeout(function() { resposta.innerText = "" }, 700);
 
     }
