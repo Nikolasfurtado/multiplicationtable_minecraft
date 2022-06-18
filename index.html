@@ -16,17 +16,25 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="sortnumbers()">
     <div class="container">
-        <video id="video" src="resources/movie.mp4"></video>
+        <video id="video" src="resources/video.mp4"></video>
         <div class="mult">
-            <h1><label id="n1" for="">numero 1</label></h1>
-            <h1><label for="">X</label></h1>
-            <h1> <label id="n2" for="">humero 2</label></h1>
-            <input id="answer" placeholder="sua resposta" type="text">
+            <h1><label id="n1" for="">X</label></h1>
+            <h1><label for=""> x </label></h1>
+            <h1> <label id="n2" for="">X</label></h1>
+
+            <input id="answer" placeholder="     sua resposta" type="text">
             <button onclick="checkanswer()">Responder</button>
-            <button onclick="sortnumbers()">Gerar desafio!</button>
+            <h1> <label id="resposta" for=""></label></h1>
+
         </div>
+
+        <div id="heart">
+
+        </div>
+
+
     </div>
     <script src="calcs.js"></script>
 </body>

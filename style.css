@@ -16,14 +16,17 @@ h1 {
 }
 
 .mult {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     margin: 0 auto;
     width: 50%;
-    border: 1px solid black;
     height: 40%;
     align-content: space-around;
 }
 
 .container {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,4 +35,23 @@ h1 {
 
 * {
     font-family: 'Press Start 2P', cursive;
+}
+
+#resposta {
+    margin-top: 10px;
+    color: yellow;
+}
+
+#heart,
+.heart {
+    margin: 2rem;
+    height: 3rem;
+}
+
+#heart {
+    align-items: flex-start;
+    margin: 3rem auto;
+    justify-content: center;
+    display: flex;
+    width: 50%;
 }
