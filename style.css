@@ -9,7 +9,8 @@ video {
     width: 50%;
 }
 
-h1 {
+h1,
+H3 {
     display: inline;
     color: white;
     font-size: 2rem;
