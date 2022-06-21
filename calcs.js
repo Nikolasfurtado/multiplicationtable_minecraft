@@ -5,7 +5,7 @@ var life = document.getElementById("resposta");
 var correct = 0;
 var num1;
 var num2;
-var movies = ["video.mp4", "video1.mp4", "video2.mp4"];
+var movies = ["resources/video.mp4", "resources/video1.mp4", "resources/video2.mp4"];
 
 function sortnumbers() {
     num1 = document.getElementById("n1").innerText = Math.floor(Math.random() * 10 + 1);
@@ -30,8 +30,19 @@ function checkanswer() {
         sortnumbers();
 
         if (correct >= 10) {
-            video.play();
-            resposta.innerText = "Parabéns! vocÊ ganhou direito a um vídeo!";
+            resposta.innerText = "Parabéns! você pode assistir a um vídeo!";
+            setTimeout(function() {
+                video.play();
+                video.requestFullscreen();
+            }, 2000);
+
+
+            setTimeout(function() { video.src = movies[1] }, 300000);
+
+            heart.innerText = "";
+            correct = 0;
+
+
         }
 
 
